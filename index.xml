@@ -17,8 +17,8 @@
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://youvann.github.io/notes/2020-06-09-deploy-hugo-on-github-pages/</guid>
-      <description>Host a Github user page.
- Create a project &amp;lt;YOUR-PROJECT&amp;gt; on github (e.g. hugo-blog) which contains Hugo&amp;rsquo;s content Create an other project &amp;lt;USERNAME&amp;gt;.github.io (e.g. youvann.github.io) in order to deploy Hugo website Clone &amp;lt;YOUR-PROJECT&amp;gt;, cd to &amp;lt;YOUR-PROJECT&amp;gt; and create / add Hugo&amp;rsquo;s content Make sure your website works by running hugo server Delete public directory if needed (rm -rf public) Set the remote origin of public directory to ssh://git@github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;USERNAME&amp;gt;.github.io.git by creating a submodule git submodule add -b master https://github.</description>
+      <description>How to host Hugo on a Github user page ?
+ Create a project &amp;lt;YOUR-PROJECT&amp;gt; on github (e.g. hugo-blog) which contains Hugo&amp;rsquo;s content Create an other project &amp;lt;USERNAME&amp;gt;.github.io (e.g. youvann.github.io) in order to deploy Hugo website Clone &amp;lt;YOUR-PROJECT&amp;gt;, cd to &amp;lt;YOUR-PROJECT&amp;gt; and create / add Hugo&amp;rsquo;s content Make sure your website works by running hugo server Delete public directory if needed (rm -rf public) Set the remote origin of public directory to ssh://git@github.</description>
     </item>
     
     <item>
