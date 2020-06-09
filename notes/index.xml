@@ -39,5 +39,16 @@
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>🇬🇧 Raspberrypi bootstrap</title>
+      <link>https://youvann.github.io/notes/2016-11-20-raspberrypi-bootstrap/</link>
+      <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://youvann.github.io/notes/2016-11-20-raspberrypi-bootstrap/</guid>
+      <description>Installation Download the image https://www.raspberrypi.org/downloads/
+Install the image on your SD card List the disk diskutil list  Identify the disk (not partition) of your SD card e.g. disk4, not disk4s1
+Unmount your SD card by using the disk identifier diskutil unmountDisk /dev/disk&amp;lt;disk# from diskutil&amp;gt;  Copy the data to your SD card sudo dd bs=1m if=image.img of=/dev/rdisk&amp;lt;disk# from diskutil&amp;gt;  You can check the progress by sending a SIGINFO signal (press Ctrl+T).</description>
+    </item>
+    
   </channel>
 </rss>
