@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on My New Hugo Site</title>
+    <link>http://example.org/notes/</link>
+    <description>Recent content in Notes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>🇫🇷 Les générateurs avec Python</title>
+      <link>http://example.org/notes/2019-10-20-python-generators/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/notes/2019-10-20-python-generators/</guid>
+      <description>Définition  Un générateur est un itérateur mais un itérateur n&amp;rsquo;est pas un générateur Un itérateur est n&amp;rsquo;importe quel objet qui possède les méthodes __next__, __iter__ et qui retourne self Un générateur  possède au moins une ou plusieurs instructions yield peut également utiliser l&amp;rsquo;instruction return permet de garder une trace de l&amp;rsquo;état interne de la fonction doit lever l&amp;rsquo;exception StopIteration quand il n&amp;rsquo;y a plus de valeurs à retourner retourne un itérateur, mais son exécution ne commence pas immédiatement   L&amp;rsquo;instruction yield :  met en pause la fonction les variables locales et leurs états sont sauvées et accessibles lors des prochains appels donne la main à la fonction appelante   L&amp;rsquo;instruction return termine complètement une fonction  Cas d&amp;rsquo;usage  Lire le contenu de fichiers très volumineux Boucler sur une liste inifinie  Ressources https://realpython.</description>
+    </item>
+    
+    <item>
+      <title>🇬🇧 Markdown Syntax Guide</title>
+      <link>http://example.org/notes/sample/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/notes/sample/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
