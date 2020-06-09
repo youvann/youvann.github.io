@@ -17,41 +17,27 @@
       <a class="link" href="https://youvann.github.io//projects">Projects</a>
   </div>
 </header><div>
+    <h1 class="title">🇬🇧 Deploy Hugo on github pages</h1>
     
     <div id="content">
-        <p>
-            Not really a blog but some personal notes in 🇬🇧 or 🇫🇷.
-        </p>
-        <ul>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2020-06-09-deploy-hugo-on-github-pages/">🇬🇧 Deploy Hugo on github pages</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2019-10-20-python-generators/">🇫🇷 Les générateurs avec Python</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/sample/">🇬🇧 Markdown Syntax Guide</a>
-              </div>
-          </div>
-        </li>
-        
-        </ul>
+        <p>Host a Github <strong>user</strong> page.</p>
+<ul>
+<li>Create a project <code>&lt;YOUR-PROJECT&gt;</code> on github (e.g. <code>hugo-blog</code>) which contains Hugo&rsquo;s content</li>
+<li>Create an other project <code>&lt;USERNAME&gt;.github.io</code> (e.g. <code>youvann.github.io</code>) in order to deploy Hugo website</li>
+<li>Clone <code>&lt;YOUR-PROJECT&gt;</code>, <code>cd</code> to <code>&lt;YOUR-PROJECT&gt;</code> and create / add Hugo&rsquo;s content</li>
+<li>Make sure your website works by running <code>hugo server</code></li>
+<li>Delete <code>public</code> directory if needed (<code>rm -rf public</code>)</li>
+<li>Set the remote origin of <code>public</code> directory to <code>ssh://git@github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git</code> by creating a submodule <code>git submodule add -b master https://github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code> (e.g. <code>git submodule add -b master https://github.com/youvann/youvann.github.io.git public</code>)</li>
+<li>Launch <code>hugo</code> command in order to generate your website (<code>public</code> directory will contains your resources)</li>
+<li>Then,</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd public
+git add .
+git commit -m <span style="color:#e6db74">&#34;rebuilding site&#34;</span>
+git push origin master
+</code></pre></div><h2 id="resources">Resources</h2>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hosting on github</a></p>
+
     </div>
 
         </div><footer>
