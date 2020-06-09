@@ -24,51 +24,6 @@
   </url>
   
   <url>
-    <loc>https://youvann.github.io/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://youvann.github.io/notes/sample/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://youvann.github.io/projects/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
@@ -76,6 +31,14 @@
   <url>
     <loc>https://youvann.github.io/notes/2016-11-20-raspberrypi-bootstrap/</loc>
     <lastmod>2016-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://youvann.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://youvann.github.io/tags/</loc>
   </url>
   
 </urlset>

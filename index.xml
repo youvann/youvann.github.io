@@ -31,15 +31,6 @@
     </item>
     
     <item>
-      <title>🇬🇧 Markdown Syntax Guide</title>
-      <link>https://youvann.github.io/notes/sample/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://youvann.github.io/notes/sample/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Projects</title>
       <link>https://youvann.github.io/projects/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
