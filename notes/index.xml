@@ -63,14 +63,5 @@ Install the image on your SD card List the disk diskutil list  Identify the disk
 Unmount your SD card by using the disk identifier diskutil unmountDisk /dev/disk&amp;lt;disk# from diskutil&amp;gt;  Copy the data to your SD card sudo dd bs=1m if=image.img of=/dev/rdisk&amp;lt;disk# from diskutil&amp;gt;  You can check the progress by sending a SIGINFO signal (press Ctrl+T).</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://youvann.github.io/notes/backlog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://youvann.github.io/notes/backlog/</guid>
-      <description>Backlog Slice https://zestedesavoir.com/tutoriels/582/les-slices-en-python/</description>
-    </item>
-    
   </channel>
 </rss>
