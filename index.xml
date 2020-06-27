@@ -6,10 +6,41 @@
     <description>Recent content on Kevin Meas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://youvann.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>🇫🇷 Les string interné avec 🐍</title>
+      <link>https://youvann.github.io/notes/2020-06-23-python-interned-string/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youvann.github.io/notes/2020-06-23-python-interned-string/</guid>
+      <description>En python les string sont immutables. Plusieurs variables peuvent référencer le même string pour économiser de la mémoire et éviter de créer un nouvel objet à chaque fois.
+Avec l&amp;rsquo;implémentation CPython, python va créer des interned string de manière implicite.
+ un string est interné si sa taille vaut 0 ou 1 un string est interné uniquement à la compilation (abc sera interné mais pas &#39;&#39;.join([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;])) un string interné doit être composé uniquement de lettres ASCII, de chiffre, ou du caractère _.</description>
+    </item>
+    
+    <item>
+      <title>🇫🇷 Les générateurs avec 🐍</title>
+      <link>https://youvann.github.io/notes/2020-06-20-python-generators/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youvann.github.io/notes/2020-06-20-python-generators/</guid>
+      <description>Définition  Un générateur est un itérateur mais un itérateur n&amp;rsquo;est pas un générateur Un itérateur est n&amp;rsquo;importe quel objet qui possède les méthodes __next__, __iter__ et qui retourne self Un générateur  possède au moins une ou plusieurs instructions yield peut également utiliser l&amp;rsquo;instruction return permet de garder une trace de l&amp;rsquo;état interne de la fonction doit lever l&amp;rsquo;exception StopIteration quand il n&amp;rsquo;y a plus de valeurs à retourner retourne un itérateur, mais son exécution ne commence pas immédiatement   L&amp;rsquo;instruction yield :  met en pause la fonction les variables locales et leurs états sont sauvées et accessibles lors des prochains appels donne la main à la fonction appelante   L&amp;rsquo;instruction return termine complètement une fonction  Cas d&amp;rsquo;usage  Lire le contenu de fichiers très volumineux Boucler sur une liste inifinie  Ressources https://realpython.</description>
+    </item>
+    
+    <item>
+      <title>🇫🇷 Les conteneurs avec 🐍</title>
+      <link>https://youvann.github.io/notes/2020-06-19-python-container-iterable-iterator/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youvann.github.io/notes/2020-06-19-python-container-iterable-iterator/</guid>
+      <description>Itérable Un objet sur lequel on peut itérer, capable de renvoyer ses éléments un à un.
+ Objet de type séquence : list, str, tuple, &amp;hellip; Objet de type mapping : dict, &amp;hellip; Classse ayant une méthode __iter__() ou __get_item__()   Lorsqu&amp;rsquo;un itérable est passé comme argument à la fonction native iter(), celle-ci fournit en retour un itérateur sur cet itérable.
+ &amp;gt;&amp;gt;&amp;gt; l = [1, 2, 3] &amp;gt;&amp;gt;&amp;gt; from collections.</description>
+    </item>
     
     <item>
       <title>🇬🇧 Deploy Hugo on github pages</title>
@@ -19,15 +50,6 @@
       <guid>https://youvann.github.io/notes/2020-06-09-deploy-hugo-on-github-pages/</guid>
       <description>How to host Hugo on a Github user page ?
  Create a project &amp;lt;YOUR-PROJECT&amp;gt; on github (e.g. hugo-blog) which contains Hugo&amp;rsquo;s content Create an other project &amp;lt;USERNAME&amp;gt;.github.io (e.g. youvann.github.io) in order to deploy Hugo website Clone &amp;lt;YOUR-PROJECT&amp;gt;, cd to &amp;lt;YOUR-PROJECT&amp;gt; and create / add Hugo&amp;rsquo;s content Make sure your website works by running hugo server Delete public directory if needed (rm -rf public) Set the remote origin of public directory to ssh://git@github.</description>
-    </item>
-    
-    <item>
-      <title>🇫🇷 Les générateurs avec Python</title>
-      <link>https://youvann.github.io/notes/2019-10-20-python-generators/</link>
-      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://youvann.github.io/notes/2019-10-20-python-generators/</guid>
-      <description>Définition  Un générateur est un itérateur mais un itérateur n&amp;rsquo;est pas un générateur Un itérateur est n&amp;rsquo;importe quel objet qui possède les méthodes __next__, __iter__ et qui retourne self Un générateur  possède au moins une ou plusieurs instructions yield peut également utiliser l&amp;rsquo;instruction return permet de garder une trace de l&amp;rsquo;état interne de la fonction doit lever l&amp;rsquo;exception StopIteration quand il n&amp;rsquo;y a plus de valeurs à retourner retourne un itérateur, mais son exécution ne commence pas immédiatement   L&amp;rsquo;instruction yield :  met en pause la fonction les variables locales et leurs états sont sauvées et accessibles lors des prochains appels donne la main à la fonction appelante   L&amp;rsquo;instruction return termine complètement une fonction  Cas d&amp;rsquo;usage  Lire le contenu de fichiers très volumineux Boucler sur une liste inifinie  Ressources https://realpython.</description>
     </item>
     
     <item>
@@ -57,6 +79,15 @@
       <description>Installation Download the image https://www.raspberrypi.org/downloads/
 Install the image on your SD card List the disk diskutil list  Identify the disk (not partition) of your SD card e.g. disk4, not disk4s1
 Unmount your SD card by using the disk identifier diskutil unmountDisk /dev/disk&amp;lt;disk# from diskutil&amp;gt;  Copy the data to your SD card sudo dd bs=1m if=image.img of=/dev/rdisk&amp;lt;disk# from diskutil&amp;gt;  You can check the progress by sending a SIGINFO signal (press Ctrl+T).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://youvann.github.io/notes/backlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youvann.github.io/notes/backlog/</guid>
+      <description>Backlog Slice https://zestedesavoir.com/tutoriels/582/les-slices-en-python/</description>
     </item>
     
   </channel>

@@ -17,68 +17,39 @@
       
   </div>
 </header><div>
+    <h1 class="title">🇫🇷 Les générateurs avec 🐍</h1>
     
     <div id="content">
-        <p>
-            Not really a blog but some personal notes in 🇬🇧 or 🇫🇷.
-        </p>
-        <ul>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2020-06-23-python-interned-string/">🇫🇷 Les string interné avec 🐍</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2020-06-20-python-generators/">🇫🇷 Les générateurs avec 🐍</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2020-06-19-python-container-iterable-iterator/">🇫🇷 Les conteneurs avec 🐍</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2020-06-09-deploy-hugo-on-github-pages/">🇬🇧 Deploy Hugo on github pages</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/2016-11-20-raspberrypi-bootstrap/">🇬🇧 Raspberrypi bootstrap</a>
-              </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="post-inner">
-              
-              <div class="title">
-                  <a href="https://youvann.github.io/notes/backlog/"></a>
-              </div>
-          </div>
-        </li>
-        
-        </ul>
+        <h2 id="définition">Définition</h2>
+<ul>
+<li>Un <strong>générateur</strong> est un <em>itérateur</em> mais un itérateur n&rsquo;est pas un générateur</li>
+<li>Un itérateur est n&rsquo;importe quel objet qui possède les méthodes <code>__next__</code>, <code>__iter__</code> et qui retourne <code>self</code></li>
+<li>Un générateur
+<ul>
+<li>possède au moins une ou plusieurs instructions <code>yield</code></li>
+<li>peut également utiliser l&rsquo;instruction <code>return</code></li>
+<li>permet de garder une trace de l&rsquo;état interne de la fonction</li>
+<li>doit lever l&rsquo;exception <code>StopIteration</code> quand il n&rsquo;y a plus de valeurs à retourner</li>
+<li>retourne un itérateur, mais son exécution ne commence pas immédiatement</li>
+</ul>
+</li>
+<li>L&rsquo;instruction <code>yield</code> :
+<ul>
+<li>met en pause la fonction</li>
+<li>les variables locales et leurs états sont sauvées et accessibles lors des prochains appels</li>
+<li>donne la main à la fonction appelante</li>
+</ul>
+</li>
+<li>L&rsquo;instruction <code>return</code> termine complètement une fonction</li>
+</ul>
+<h2 id="cas-dusage">Cas d&rsquo;usage</h2>
+<ul>
+<li>Lire le contenu de fichiers très volumineux</li>
+<li>Boucler sur une liste inifinie</li>
+</ul>
+<h2 id="ressources">Ressources</h2>
+<p><a href="https://realpython.com/introduction-to-python-generators/#using-generators">https://realpython.com/introduction-to-python-generators/#using-generators</a></p>
+
     </div>
 
         </div><footer>
